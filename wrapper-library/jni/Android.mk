@@ -15,12 +15,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-# include wrapper library
-include $(CLEAR_VARS)
-LOCAL_MODULE := InnerLibrary
-LOCAL_SRC_FILES := libfoo.so
-include $(PREBUILT_SHARED_LIBRARY)
-
 include $(CLEAR_VARS)
 
 LOCAL_MODULE    := WrapperLibrary
@@ -28,6 +22,6 @@ LOCAL_C_INCLUDES += $(LOCAL_PATH)/../src
 LOCAL_C_INCLUDES += ../inner-library/src
 LOCAL_SRC_FILES := ../src/wrapper-library.c
 
-# LOCAL_LDLIBS    := -L$(LOCAL_PATH)/../../inner-library/obj/local -lInnerLibrary
+LOCAL_LDLIBS    := -L$(LOCAL_PATH)/../../inner-library/obj/local -lInnerLibrary
 
 include $(BUILD_STATIC_LIBRARY)

@@ -5,3 +5,14 @@ inner-library/libs
 wrapper-library/err.txt
 wrapper-library/obj
 wrapper-library/libs
+
+hello-jni/.gradle
+*.iml
+hello-jni/local.properties
+hello-jni/.idea/workspace.xml
+hello-jni/.idea/libraries
+.DS_Store
+hello-jni/build
+hello-jni/captures
+hello-jni/.externalNativeBuild
+hello-jni/app/.externalNativeBuild

@@ -1,0 +1,4 @@
+rm -r obj
+rm -r err.txt
+ndk-build 2> err.txt
+

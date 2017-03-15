@@ -1,4 +1,5 @@
-rm -r obj
-rm -r err.txt
+rm -fr obj
+rm -fr err.txt
+rm -fr libs
 ndk-build 2> err.txt
 

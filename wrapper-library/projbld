@@ -5,4 +5,4 @@ ndk-build 2> err.txt
 mkdir output
 mv libs output/
 cp -R inc output/
-rm -rf obj
+# rm -rf obj

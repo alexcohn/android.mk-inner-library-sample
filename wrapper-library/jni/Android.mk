@@ -24,7 +24,7 @@ include $(PREBUILT_SHARED_LIBRARY)
 # build this library
 include $(CLEAR_VARS)
 LOCAL_MODULE    := WrapperLibrary
-LOCAL_C_INCLUDES += $(LOCAL_PATH)/../src
+LOCAL_C_INCLUDES += $(LOCAL_PATH)/../inc
 LOCAL_C_INCLUDES += ../inner-library/src
 LOCAL_SRC_FILES := ../src/wrapper-library.c
 LOCAL_SHARED_LIBRARIES := InnerLibrary

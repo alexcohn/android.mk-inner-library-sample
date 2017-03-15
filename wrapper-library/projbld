@@ -1,4 +1,8 @@
-rm -r obj
+rm -rf obj
 rm -r err.txt
+rm -fr output
 ndk-build 2> err.txt
-
+mkdir output
+mv libs output/
+cp -R inc output/
+rm -rf obj

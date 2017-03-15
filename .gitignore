@@ -16,3 +16,5 @@ hello-jni/build
 hello-jni/captures
 hello-jni/.externalNativeBuild
 hello-jni/app/.externalNativeBuild
+
+wrapper-library/output

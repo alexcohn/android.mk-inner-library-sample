@@ -1,5 +1,5 @@
 #include "inner-library.h"
 
-void poslibMethod(void)
+void innerLibraryMethod(void)
 {
 }

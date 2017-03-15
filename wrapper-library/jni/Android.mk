@@ -15,13 +15,18 @@
 
 LOCAL_PATH := $(call my-dir)
 
+# include the base library
 include $(CLEAR_VARS)
+LOCAL_MODULE := InnerLibrary
+LOCAL_SRC_FILES := ../../inner-library/libs/$(TARGET_ARCH_ABI)/libInnerLibrary.so
+include $(PREBUILT_SHARED_LIBRARY)
 
+# build this library
+include $(CLEAR_VARS)
 LOCAL_MODULE    := WrapperLibrary
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../src
 LOCAL_C_INCLUDES += ../inner-library/src
 LOCAL_SRC_FILES := ../src/wrapper-library.c
+LOCAL_SHARED_LIBRARIES := InnerLibrary
 
-LOCAL_LDLIBS    := -L$(LOCAL_PATH)/../../inner-library/obj/local -lInnerLibrary
-
-include $(BUILD_STATIC_LIBRARY)
+include $(BUILD_SHARED_LIBRARY)

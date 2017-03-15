@@ -1,5 +1,7 @@
 
 inner-library/err.txt
 inner-library/obj
+inner-library/libs
 wrapper-library/err.txt
 wrapper-library/obj
+wrapper-library/libs

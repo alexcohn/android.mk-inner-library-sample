@@ -8,4 +8,4 @@ LOCAL_C_INCLUDES += $(LOCAL_PATH)/../src
 LOCAL_SRC_FILES := \
 ../src/inner-library.c
 
-include $(BUILD_STATIC_LIBRARY)
+include $(BUILD_SHARED_LIBRARY)

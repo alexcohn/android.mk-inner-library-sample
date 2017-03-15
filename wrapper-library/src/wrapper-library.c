@@ -1,7 +1,7 @@
 #include "wrapper-library.h"
 #include "inner-library.h"
 
-void spectrumMethod(void)
+void wrapperLibraryMethod(void)
 {
-    poslibMethod();
+    innerLibraryMethod();
 }

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.4.1)
 
 add_library( wrapper-lib
-             SHARED
+             STATIC
              IMPORTED )
 set_target_properties( # Specifies the target library.
                        wrapper-lib
